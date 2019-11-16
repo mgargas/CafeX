@@ -2,6 +2,12 @@ package com.cafex
 
 object Model {
 
+  val cafeItems: Map[String, CafeItem] = Map(
+    "Cola" -> Cola(),
+    "Coffee" -> Coffee(),
+    "Cheese Sandwich" -> CheeseSandwich(),
+    "Steak Sandwich" -> SteakSandwich())
+
   sealed trait Temperature
 
   sealed trait CafeItem {
